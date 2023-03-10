@@ -1,0 +1,22 @@
+@mixin flexbox(
+   $justifycontent: flex-start,
+   $alignitems: flex-start,
+   $columngap: 0,
+   $flexdirection: row
+) {
+   display: flex;
+   justify-content: $justifycontent;
+   align-items: $alignitems;
+   column-gap: $columngap;
+   flex-direction: $flexdirection;
+}
+
+@mixin circle($width, $height) {
+   width: $width;
+   height: $height;
+   border-radius: 50%;
+}
+
+@mixin cursor() {
+   cursor: pointer;
+}

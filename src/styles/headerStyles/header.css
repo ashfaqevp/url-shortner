@@ -1,0 +1,150 @@
+/*## Colors
+### Primary*/
+/*###Secondary*/
+/*###Neutral*/
+.header {
+  width: 100%;
+  padding: 2rem 8rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+  flex-direction: row;
+}
+.header .icon-menu {
+  display: none;
+}
+.header .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 0;
+       column-gap: 0;
+  flex-direction: row;
+}
+.header .navbar .ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  flex-direction: row;
+  list-style: none;
+  color: hsl(257, 7%, 63%);
+}
+.header .navbar .login-sign-up {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+  flex-direction: row;
+}
+.header .navbar .login-sign-up .login {
+  color: hsl(257, 7%, 63%);
+}
+.header .navbar .login-sign-up .sign-up-button {
+  width: 6rem;
+  padding: 0.5rem 1rem;
+  background-color: hsl(180, 66%, 49%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 1rem;
+  font-weight: 500;
+}
+
+@media (hover: hover) {
+  .navbar > .ul > li:hover {
+    cursor: pointer;
+    color: hsl(260, 8%, 14%);
+  }
+  .navbar > .login-sign-up > :hover {
+    cursor: pointer;
+  }
+  .navbar > .login-sign-up .login:hover {
+    color: hsl(255, 11%, 22%);
+  }
+  .navbar > .login-sign-up .sign-up-button:hover {
+    background-color: hsl(180, 67%, 74%);
+  }
+}
+@media (width <= 1115px) {
+  .header {
+    padding: 2rem 4rem;
+  }
+}
+@media (width <= 850px) {
+  .header {
+    padding: 2rem 2rem;
+  }
+}
+@media (width <= 700px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    flex-direction: row;
+  }
+  .header .icon-menu {
+    display: block;
+  }
+  .header .navbar {
+    width: 20.5rem;
+    padding: 2rem 1rem;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 0.5rem;
+    position: absolute;
+    right: -21rem;
+    top: 5.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+  .header .navbar .ul {
+    width: 100%;
+    padding-bottom: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    flex-direction: column;
+    row-gap: 1rem;
+    border-bottom: 0.1rem solid hsl(257, 7%, 63%);
+  }
+  .header .navbar .login-sign-up {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .header .navbar .login-sign-up .login {
+    color: hsl(0, 0%, 100%);
+  }
+  .header .navbar .login-sign-up .sign-up-button {
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+  }
+  .header .navbar.active {
+    right: 1rem;
+    transition: 0.3s;
+  }
+}
+@media (width <= 700px) and (hover: hover) {
+  .icon-menu:hover {
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=header.css.map */

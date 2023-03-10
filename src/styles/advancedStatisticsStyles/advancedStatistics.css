@@ -1,0 +1,177 @@
+/*## Colors
+### Primary*/
+/*###Secondary*/
+/*###Neutral*/
+.advanced-statistics {
+  width: 100%;
+  padding: 2rem 0 7rem;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  -moz-column-gap: 0;
+       column-gap: 0;
+  flex-direction: column;
+  position: relative;
+}
+.advanced-statistics h2 {
+  text-align: center;
+  color: hsl(255, 11%, 22%);
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.advanced-statistics > p {
+  width: 32rem;
+  text-align: center;
+  color: hsl(257, 7%, 63%);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.advanced-statistics .all-statistics {
+  width: 100%;
+  padding: 0 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  flex-direction: row;
+  position: relative;
+  z-index: 1;
+}
+.advanced-statistics .all-statistics > div {
+  width: 33.3333333333%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  -moz-column-gap: 0;
+       column-gap: 0;
+  flex-direction: column;
+  z-index: 3;
+}
+.advanced-statistics .all-statistics > div .statistic-image {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 0;
+       column-gap: 0;
+  flex-direction: row;
+  background-color: hsl(257, 27%, 26%);
+  margin: 0 0 -2.5rem 1rem;
+  z-index: 4;
+}
+.advanced-statistics .all-statistics > div .statistic-text {
+  padding: 5rem 1rem 2.5rem 2rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+}
+.advanced-statistics .all-statistics > div .statistic-text > h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.advanced-statistics .all-statistics > div .statistic-text > p {
+  font-weight: 500;
+  color: hsl(257, 7%, 63%);
+}
+.advanced-statistics .all-statistics .detailed-records {
+  margin-top: 5rem;
+}
+.advanced-statistics .all-statistics .fully-customizable {
+  margin-top: 10rem;
+}
+.advanced-statistics .all-statistics .blue-line {
+  width: calc(100% - 16rem);
+  height: 0.5rem;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  position: absolute;
+  top: 17rem;
+  z-index: 2;
+}
+
+@media (width <= 1115px) {
+  .advanced-statistics .all-statistics {
+    padding: 0 4rem;
+  }
+}
+@media (width <= 850px) {
+  .advanced-statistics {
+    padding: 0 2rem 2rem;
+  }
+  .advanced-statistics h2 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .advanced-statistics > p {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .advanced-statistics .all-statistics {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    flex-direction: column;
+  }
+  .advanced-statistics .all-statistics > div {
+    width: 75%;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    flex-direction: column;
+  }
+  .advanced-statistics .all-statistics > div .statistic-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    flex-direction: row;
+    margin: 0 0 -2.5rem 0;
+    z-index: 4;
+  }
+  .advanced-statistics .all-statistics > div .statistic-text {
+    padding: 4rem 1rem 2.5rem 2rem;
+    text-align: center;
+  }
+  .advanced-statistics .all-statistics .blue-line {
+    width: 0.5rem;
+    height: 30rem;
+    top: 17rem;
+  }
+  .advanced-statistics .all-statistics .detailed-records {
+    margin-top: 0rem;
+  }
+  .advanced-statistics .all-statistics .fully-customizable {
+    margin-top: 0rem;
+  }
+}
+@media (width <= 550px) {
+  .advanced-statistics h2 {
+    font-size: 1.8rem;
+  }
+  .advanced-statistics > p {
+    font-size: 1rem;
+  }
+  .advanced-statistics .all-statistics {
+    padding: 0 2rem;
+  }
+  .advanced-statistics .all-statistics > div {
+    width: 100%;
+  }
+}
+@media (width <= 375px) {
+  .advanced-statistics .all-statistics {
+    padding: 0;
+  }
+}/*# sourceMappingURL=advancedStatistics.css.map */

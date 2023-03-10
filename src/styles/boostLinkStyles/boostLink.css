@@ -1,0 +1,52 @@
+/*## Colors
+### Primary*/
+/*###Secondary*/
+/*###Neutral*/
+.boost-link-section {
+  width: 100%;
+  padding: 0 2rem;
+  height: 14.8rem;
+  background-image: url("/src/images/bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(257, 27%, 26%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 0;
+       column-gap: 0;
+  flex-direction: column;
+}
+.boost-link-section h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.boost-link-section .boostlink-button {
+  padding: 0.7rem 2.2rem;
+  background-color: hsl(180, 66%, 49%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+@media (hover: hover) {
+  .boost-link-section .boostlink-button:hover {
+    cursor: pointer;
+    background-color: hsl(180, 67%, 74%);
+  }
+}
+@media (width <= 550px) {
+  .boost-link-section h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.7rem;
+  }
+}
+@media (width <= 550px) {
+  .boost-link-section h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=boostLink.css.map */

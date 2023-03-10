@@ -1,0 +1,101 @@
+/*## Colors
+### Primary*/
+/*###Secondary*/
+/*###Neutral*/
+.hero-section {
+  width: 100%;
+  padding: 2rem 0rem 2rem 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  -moz-column-gap: 0;
+       column-gap: 0;
+  flex-direction: row;
+}
+.hero-section .hero-text {
+  width: 50%;
+}
+.hero-section .hero-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: hsl(260, 8%, 14%);
+  line-height: 1.4;
+}
+.hero-section .hero-text p {
+  width: 90%;
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+  color: hsl(257, 7%, 63%);
+}
+.hero-section .hero-text .getstarted-button {
+  padding: 0.7rem 2.2rem;
+  background-color: hsl(180, 66%, 49%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.hero-section .hero-image {
+  width: 50%;
+  margin-right: -6rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  -moz-column-gap: 0;
+       column-gap: 0;
+  flex-direction: row;
+}
+
+@media (hover: hover) {
+  .hero-text .getstarted-button:hover {
+    cursor: pointer;
+    background-color: hsl(180, 67%, 74%);
+  }
+}
+@media (width <= 1115px) {
+  .hero-section {
+    padding: 2rem 0rem 2rem 4rem;
+  }
+  .hero-section .hero-text h1 {
+    font-size: 3.1rem;
+  }
+  .hero-section .hero-text p {
+    font-size: 1rem;
+  }
+  .hero-section .hero-image {
+    width: 60%;
+    margin-right: -4rem;
+  }
+}
+@media (width <= 850px) {
+  .hero-section {
+    padding: 2rem 0rem 2rem 2rem;
+  }
+  .hero-section .hero-image {
+    width: 60%;
+    margin-right: -4rem;
+  }
+}
+@media (width <= 700px) {
+  .hero-section {
+    width: 100%;
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    flex-direction: column-reverse;
+    row-gap: 3rem;
+  }
+  .hero-section .hero-image {
+    width: 80%;
+    margin-right: 0rem;
+  }
+  .hero-section .hero-text {
+    width: 100%;
+    padding: 0 2rem;
+    text-align: center;
+  }
+}/*# sourceMappingURL=heroSection.css.map */

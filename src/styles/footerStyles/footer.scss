@@ -1,0 +1,99 @@
+@use "../mixins/mixins" as *;
+@use "../colors/colors" as *;
+@use "../fonts/fonts" as *;
+.footer {
+   width: 100vw;
+   padding: 3rem 8rem;
+   @include flexbox(space-between, flex-start, 8rem);
+   background-color: $Very-Dark-Violet;
+   .logo-footer {
+      align-self: flex-start;
+      filter: brightness(1000%);
+   }
+   .footer-text {
+      width: 100%;
+      @include flexbox(space-between, flex-start, 0);
+      > div {
+         h4 {
+            color: $White;
+            font-weight: $font-700;
+            margin-bottom: 1.5rem;
+         }
+         p {
+            color: $Gray;
+            margin-bottom: 1rem;
+         }
+      }
+
+      .social-media {
+         @include flexbox(flex-start, flex-start, 1.5rem);
+         > img {
+            width: 1.5rem;
+         }
+      }
+   }
+}
+
+@media (hover: hover) {
+   .footer-text > div p:hover {
+      cursor: pointer;
+      color: $Cyan;
+   }
+
+   .social-media img:hover {
+      cursor: pointer;
+      filter: invert(35%) sepia(83%) saturate(401%) hue-rotate(127deg) brightness(91%) contrast(90%);
+   }
+}
+
+@media (width <= 1115px) {
+   .footer {
+      padding: 3rem 4rem;
+      @include flexbox(space-between, flex-start, 4rem);
+   }
+}
+
+@media (width <= 850px) {
+   .footer {
+      padding: 3rem 2rem;
+      @include flexbox(space-between, flex-start, 3rem);
+   }
+}
+
+@media (width <= 700px) {
+   .footer {
+      padding: 3rem 2rem;
+      .footer-text {
+         width: 100%;
+         @include flexbox(space-between, flex-start, 0);
+         flex-wrap: wrap;
+         > div {
+            width: 50%;
+         }
+      }
+   }
+}
+
+@media (width <= 550px) {
+   .footer {
+      padding: 3rem 2rem;
+      @include flexbox(flex-start, center, 0, column);
+      row-gap: 3rem;
+      .logo-footer {
+         align-self: auto;
+      }
+      .footer-text {
+         width: 100%;
+         @include flexbox(flex-start, center, 0, column);
+         row-gap: 2rem;
+         flex-wrap: nowrap;
+         > div {
+            width: 100%;
+            text-align: center;
+         }
+         .social-media {
+            @include flexbox(center, flex-start, 1.5rem);
+         }
+      }
+   }
+}

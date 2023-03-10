@@ -1,0 +1,53 @@
+@use "../colors/colors" as *;
+@use "../mixins/mixins" as *;
+@use "../fonts/fonts" as *;
+
+.boost-link-section {
+   width: 100%;
+   padding: 0 2rem;
+   height: 14.8rem;
+   background-image: url("/src/images/bg-boost-desktop.svg");
+   background-repeat: no-repeat;
+   background-color: $Dark-Violet;
+   @include flexbox(center, center, 0, column);
+   h2 {
+      color: $White;
+      font-size: 2.3rem;
+      font-weight: $font-700;
+      margin-bottom: 1rem;
+   }
+   .boostlink-button {
+      padding: 0.7rem 2.2rem;
+      background-color: $Cyan;
+      color: $White;
+      border: none;
+      border-radius: 2rem;
+      font-size: $font-body;
+      font-weight: $font-500;
+   }
+}
+
+@media (hover: hover) {
+   .boost-link-section .boostlink-button:hover {
+      @include cursor;
+      background-color: hsl(180, 67%, 74%);
+   }
+}
+
+@media (width <= 550px) {
+   .boost-link-section {
+      h2 {
+         color: $White;
+         font-size: 1.7rem;
+      }
+   }
+}
+
+@media (width <= 550px) {
+   .boost-link-section {
+      h2 {
+         color: $White;
+         font-size: 1.5rem;
+      }
+   }
+}
